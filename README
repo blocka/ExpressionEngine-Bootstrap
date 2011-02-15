@@ -1,0 +1,13 @@
+This file "bootstraps" the EE environment, so you use the EE "super object" in EE2, or the EE global objects in EE1.
+
+Useful for little one off scripts, or cron jobs that need access to the EE environment.
+
+Example:
+
+<?php
+$system_path = '/path/to/system/folder';
+include '/path/to/bootstrap.php';
+
+$DB = $EE->db;
+
+...
